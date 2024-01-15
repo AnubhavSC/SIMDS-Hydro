@@ -821,6 +821,14 @@ video {
   height: 100%;
 }
 
+.h-\[100vh\]{
+  height: 100vh;
+}
+
+.h-\[90vh\]{
+  height: 90vh;
+}
+
 .w-5{
   width: 1.25rem;
 }
@@ -1400,6 +1408,10 @@ video {
 
   .md\:h-\[80vh\]{
     height: 80vh;
+  }
+
+  .md\:h-\[70vh\]{
+    height: 70vh;
   }
 
   .md\:w-\[8rem\]{
