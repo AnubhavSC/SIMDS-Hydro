@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
     <title>SIMDS-Hydro Smart Irrigation and Moisture Detection System</title>
 </head>
 
@@ -30,12 +32,13 @@
                                     stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
                             </svg>
                         </div>
-                    </button> 
+                    </button>
                     <div class="hidden border-t md:border-t-0 w-full md:block md:w-auto menu">
                         <ul
                             class="space-y-4 mt-3 md:mt-0 md:space-y-0 md:flex md:space-x-8 items-center md:font-mono text-gray-700 text-sm font-normal md:text-[17px] md:text-white">
                             <li class="border-b md:border-b-0 h-[2rem] "><a
-                                    class="ml-9 md:ml-0 hover:border-b-2 hover:border-[#44ad36]  " href="#">Home</a>
+                                    class="ml-9 md:ml-0 hover:border-b-2 hover:border-[#44ad36]  "
+                                    href="https://anubhavsc.github.io/SIMDS-Hydro/">Home</a>
                             </li>
                             <li class="border-b md:border-b-0 h-[2rem]"><a
                                     class="ml-9 md:ml-0 hover:border-b-2 hover:border-[#44ad36]  "
@@ -49,8 +52,9 @@
                                     href="#development">Development</a>
                             </li>
                             <button id="contact-btn"
-                                class=" md:bg-[#44ad36] h-[2rem]  md:h-10  md:text-white md:rounded-full md:w-[8rem] " ><a
-                                    class=" md:uppercase md:text-lg ml-9 md:ml-0 md:font-bold hover:border-[#44ad36]" href="#contact">Contact</a></button>
+                                class=" md:bg-[#44ad36] h-[2rem]  md:h-10  md:text-white md:rounded-full md:w-[8rem] "><a
+                                    class=" md:uppercase md:text-lg ml-9 md:ml-0 md:font-bold hover:border-[#44ad36]"
+                                    href="#contact">Contact</a></button>
                         </ul>
                     </div>
 
@@ -68,7 +72,7 @@
                         </h1>
                         <div class="mt-4">
                             <button class="bg-[#44ad36] h-12 text-white rounded-full w-[11rem]">
-                                <a class="uppercase text-[14px] font-bold">Download App<a>
+                                <a href="https://github.com/AnubhavSC/SIMDS-Hydro-CODE" class="uppercase text-[14px] font-bold">Download App<a>
                             </button>
                         </div>
                     </div>
@@ -135,7 +139,7 @@
                             using
                             WiFi connectivity. This allows them to turn the motor on or off with a simple mobile
                             application
-                            (<span><a href="" class="text-[#30833ae1]">SIMDS-Hyrdo.apk</a></span>)
+                            (<span><a href="https://github.com/AnubhavSC/SIMDS-Hydro-CODE" class="text-[#30833ae1]">SIMDS-Hyrdo.apk</a></span>)
                             . Additionally, a physical switch is integrated into the system, providing a manual
                             control option.</p>
 
@@ -238,7 +242,7 @@
                                 alt="">
                         </div>
                         <p class="uppercase  mt-[1.5rem] md:mt-[3rem] underline font-bold text-[1.5rem]">code for <span
-                                class="lowercase">Version 2.0 👉 <a class="font-normal text-[#30833ae1]" href="">source
+                                class="lowercase">Version 2.0 👉 <a class="font-normal text-[#30833ae1]" href="https://github.com/AnubhavSC/SIMDS-Hydro-CODE">source
                                     code</a></span></p>
                         <section class="flex relative">
                             <div class="">
@@ -360,22 +364,22 @@
             <p class="mb-8 lg:mb-16 font-light text-center text-gray-200 sm:text-xl">This project is developed by
                 Anubhav Shivam Nath. If you have any questions or need information about this project, feel free to
                 reach out to me. </p>
-            <form action="#" class="space-y-8">
+            <form id="contactForm" class="space-y-8">
                 <div>
                     <label for="email" class="block mb-2 text-sm font-medium text-gray-100 ">Your email</label>
-                    <input type="email" id="email"
+                    <input type="email" id="email" type="email" name="email"
                         class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
                         placeholder="example@gmail.com" required>
                 </div>
                 <div>
                     <label for="subject" class="block mb-2 text-sm font-medium text-gray-100 ">Subject</label>
-                    <input type="text" id="subject"
+                    <input type="text" id="subject" name="subject"
                         class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500  "
                         placeholder="Let us know how we can help you" required>
                 </div>
                 <div class="sm:col-span-2">
                     <label for="message" class="block mb-2 text-sm font-medium text-gray-100 ">Your message</label>
-                    <textarea id="message" rows="6"
+                    <textarea id="message" rows="6" name="message"
                         class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 "
                         placeholder="Leave a comment..."></textarea>
                 </div>
@@ -401,13 +405,13 @@
                     target="_blank"> Anubhav Shivam Nath</a>
             </p>
             <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                <a href="https://github.com/AnubhavSC" class="text-gray-500">
+                <a href="https://www.facebook.com/profile.php?id=61555238255579" class="text-gray-500">
                     <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         class="w-5 h-5" viewBox="0 0 24 24">
                         <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                     </svg>
                 </a>
-                <a class="ml-3 text-gray-500">
+                <a href="https://twitter.com/WhiteDe11243027" class="ml-3 text-gray-500">
                     <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         class="w-5 h-5" viewBox="0 0 24 24">
                         <path
@@ -415,14 +419,14 @@
                         </path>
                     </svg>
                 </a>
-                <a class="ml-3 text-gray-500">
+                <a  href="https://www.instagram.com/anubhav_shivam_nath/ " class="ml-3 text-gray-500">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                         stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
                         <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                         <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
                     </svg>
                 </a>
-                <a class="ml-3 text-gray-500">
+                <a href="https://www.linkedin.com/in/anubhav-shivam-nath-42a568265/" class="ml-3 text-gray-500">
                     <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                         stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
                         <path stroke="none"
@@ -435,6 +439,67 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCH-f84ScAh46rzknhykqGM5hjDCQgreIw",
+
+            authDomain: "anubhav-wc-f8796.firebaseapp.com",
+
+            databaseURL: "https://anubhav-wc-f8796-default-rtdb.asia-southeast1.firebasedatabase.app",
+
+            projectId: "anubhav-wc-f8796",
+
+            storageBucket: "anubhav-wc-f8796.appspot.com",
+
+            messagingSenderId: "879844841720",
+
+            appId: "1:879844841720:web:2e122c6c37e3493376030d",
+
+            measurementId: "G-LVK4XMVB4R"
+
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        var database = firebase.database();
+
+        var contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', submitForm);
+
+        function submitForm(event) {
+            event.preventDefault();
+
+            var email = document.getElementById('email').value;
+            var subject = document.getElementById('subject').value;
+            var message = document.getElementById('message').value;
+
+            saveFormToFirebase( email, subject, message);
+        }
+
+        function saveFormToFirebase( email, subject, message) {
+            var formData = {
+                email: email,
+                subject: subject,
+                message: message,
+                timestamp: firebase.database.ServerValue.TIMESTAMP  // Add timestamp to form data
+            };
+
+            var newFormRef = database.ref('forms').push();
+            newFormRef.set(formData)
+                .then(function () {
+                    alert('Your message is successfully send. We will contact you soon.');
+                    window.location.replace('https://anubhavsc.github.io/SIMDS-Hydro/');
+
+                })
+                .catch(function (error) {
+                    alert('Error saving form data:', error);
+                    // You can display an error message to the user.
+                });
+        }
+
+    </script>
     <script>
         document.addEventListener('scroll', () => {
             var scroll_position = window.scrollY;
