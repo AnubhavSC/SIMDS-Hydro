@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Martian+Mono:wght@100&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background {
+    background: linear-gradient(rgba(25, 25, 25, 0.493), rgba(25, 25, 25, 0.568)), url(../assets/images/Tulsi.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+#working {
+    background: linear-gradient(rgba(25, 25, 25, 0.699), rgba(25, 25, 25, 0.808)), url(../assets/images/working-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+#scientific{
+    color: white;
+    background: linear-gradient(rgba(25, 25, 25, 0.699), rgba(25, 25, 25, 0.808)), url(../assets/images/scientific-bg.avif);
+    background-size: cover;
+}
+
+#contact{
+    color: white;
+    background: linear-gradient(rgba(25, 25, 25, 0.699), rgba(25, 25, 25, 0.808)), url(../assets/images/contact-bg.jpg);
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+
+    #contact-btn{
+        margin-top: -10px;
+    }
+
+    .background {
+        background-attachment: fixed;
+    }
+    #scientific{
+        background-attachment: fixed;
+    }
+    #working{
+        background-attachment: fixed;
+    }
+    
+    #contact{
+        background-attachment: fixed;
+    }
+}

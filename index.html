@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SIMDS-Hydro Smart Irrigation and Moisture Detection System</title>
+</head>
+
+<body>
+    <div>
+        <header class="flex flex-col h-[64vh] md:h-[80vh] background">
+            <nav class="bg-white md:bg-transparent">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
+                    <div class=" ml-5 p-4">
+                        <a href="#" class="flex items-center"><span
+                                class="self-center text-[1.5rem] md:text-[2rem] font-kanit whitespace-nowrap uppercase text-black md:text-white">SIMDS</span></a>
+                        <h2
+                            class="ml-2 uppercase text md:text-[1.3rem] font-Nanum text-black md:text-white mt-[-0.7rem]">
+                            Hydro</h2>
+                    </div>
+                    <button onclick="toggleMenu()"
+                        class="md:hidden bg-[#44ad36] mr-5 h-[2.5rem] w-[2.5rem] rounded-sm  menu-button" type="button">
+                        <div class="m-auto w-[50%]">
+                            <span class="sr-only text-white ">menu</span>
+                            <svg class="w-5 h-5 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 17 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                        </div>
+                    </button> 
+                    <div class="hidden border-t md:border-t-0 w-full md:block md:w-auto menu">
+                        <ul
+                            class="space-y-4 mt-3 md:mt-0 md:space-y-0 md:flex md:space-x-8 items-center md:font-mono text-gray-700 text-sm font-normal md:text-[17px] md:text-white">
+                            <li class="border-b md:border-b-0 h-[2rem] "><a
+                                    class="ml-9 md:ml-0 hover:border-b-2 hover:border-[#44ad36]  " href="#">Home</a>
+                            </li>
+                            <li class="border-b md:border-b-0 h-[2rem]"><a
+                                    class="ml-9 md:ml-0 hover:border-b-2 hover:border-[#44ad36]  "
+                                    href="#introduction">Introduction</a>
+                            </li>
+                            <li class="border-b md:border-b-0 h-[2rem]"><a
+                                    class="ml-9 md:ml-0 hover:border-b-2 hover:border-[#44ad36]  "
+                                    href="#working">Working</a></li>
+                            <li class="border-b md:border-b-0 h-[2rem]"><a
+                                    class="ml-9 md:ml-0 hover:border-b-2 hover:border-[#44ad36]  "
+                                    href="#development">Development</a>
+                            </li>
+                            <button id="contact-btn"
+                                class=" md:bg-[#44ad36] h-[2rem]  md:h-10  md:text-white md:rounded-full md:w-[8rem] " ><a
+                                    class=" md:uppercase md:text-lg ml-9 md:ml-0 md:font-bold hover:border-[#44ad36]" href="#contact">Contact</a></button>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+
+            <section class="flex items-center justify-center h-[34rem] ">
+                <div>
+                    <div class="text-center">
+                        <h2 class="text-white font-bold text-[18px] md:text-[1.5rem] font-Montserrat">Grow Tomorrow with
+                            Smart AgriTech</h2>
+                        <div class="border-b-2 mt-[0.3rem] border-[#44ad36] w-[5rem] mx-auto"></div>
+                        <h1 class="text-white mx-2 text-[1.9rem] md:text-[4rem] uppercase font-Montserrat">A WONDERFUL
+                            GIFT
+                        </h1>
+                        <div class="mt-4">
+                            <button class="bg-[#44ad36] h-12 text-white rounded-full w-[11rem]">
+                                <a class="uppercase text-[14px] font-bold">Download App<a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section id="introduction" class="flex justify-center relative">
+                <div class="mt-[4rem] ">
+                    <div class="hidden lg:block bg-[#44ad36] h-full w-[8px] ml-[9rem] absolute "></div>
+                    <div class="bg-black  hidden lg:block absolute h-[30px] w-[30px]  ml-[8.3rem] rounded-full">
+                        <div class="bg-white m-[6.5px] h-[17px] w-[17px] rounded-full"></div>
+                    </div>
+                    <div class=" text-center">
+                        <h3 class="uppercase md:text-[2rem] font-Montserrat text-[25px] sm:text-[28px]">Introduction
+                        </h3>
+                        <div class="border-b-4 mt-[0.3rem] border-[#44ad36] w-[5rem] mx-auto"></div>
+                        <p class="mt-[2rem]  mx-[2rem] lg:mx-[21.2%]  md:leading-[25px] text-justify">In today's
+                            advancing world, where technology is growing fast, SIMDS (Smart Irrigation and Moisture
+                            Detection System) helps farmers with
+                            distant fields. Instead of farmers going far to water crops, now using this simple model,
+                            the
+                            farmers can now water their fields from any location around the globe having mobile network
+                            connectivity. Using 4G network connectivity, farmers can just send a text SMS to the system
+                            and start watering. No need to be there in person, especially for big fields.</p>
+
+                        <p class=" mt-[1rem] md:mt-[2rem]  mx-[2rem] lg:mx-[21.2%]  md:leading-[25px] text-justify">
+                            And here's the smart part: my model knows when the soil needs water. If a farmer
+                            forgets to water the plants and the moisture level of the soil goes below the given
+                            threshold,
+                            the model senses it and sends a message to remind the farmer. It's like having a helpful
+                            buddy
+                            for the crops as well as a helping hand to the farmers.</p>
+
+                        <p class=" mt-[1rem] md:mt-[2rem]  mx-[2rem] lg:mx-[21.2%]  md:leading-[25px] text-justify">
+                            Plus, the model has Wi-Fi, so farmers can control the water pump from anywhere
+                            near the farm. Even if they're relaxing under a tree, they can still manage the watering.
+                            It's
+                            all
+                            about making farming simpler, better, and easier for the farmers.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="working" class="flex mt-7 justify-center text-white h-[80vh] relative">
+                <div class="hidden lg:block bg-[#44ad36] h-full w-[8px] ml-[9rem] absolute "></div>
+                <div class="mt-[4rem]">
+                    <div class="bg-white  hidden lg:block absolute h-[30px] w-[30px]  ml-[8.3rem] rounded-full">
+                        <div class="bg-black m-[6.5px] h-[17px] w-[17px] rounded-full"></div>
+                    </div>
+                    <div class=" text-center">
+                        <h3 class="uppercase md:text-[2rem] font-Montserrat text-[25px] sm:text-[28px]">Working</h3>
+                        <div class="border-b-4 mt-[0.3rem] border-[#44ad36] w-[5rem] mx-auto"></div>
+                        <p class="mt-[2rem]  mx-[2rem] lg:mx-[21.2%]  md:leading-[25px] text-justify">When the
+                            soil moisture levels drop below a specified threshold, an automated system sends an SMS
+                            alert
+                            notifying the farmer of low soil moisture. Upon receiving the alert, the farmer can choose
+                            to
+                            activate the irrigation system. The system is equipped with a motor that starts and
+                            irrigates
+                            the field for a predefined duration.</p>
+
+                        <p class=" mt-[1rem] md:mt-[2rem]  mx-[2rem] lg:mx-[21.2%]  md:leading-[25px] text-justify">
+                            For added convenience, the farmer has the option to control the irrigation system remotely
+                            using
+                            WiFi connectivity. This allows them to turn the motor on or off with a simple mobile
+                            application
+                            (<span><a href="" class="text-[#30833ae1]">SIMDS-Hyrdo.apk</a></span>)
+                            . Additionally, a physical switch is integrated into the system, providing a manual
+                            control option.</p>
+
+                        <p class=" mt-[1rem] md:mt-[2rem]  mx-[2rem] lg:mx-[21.2%]  md:leading-[25px] text-justify">
+                            Once the irrigation cycle is complete, another SMS is sent to inform the farmer that the
+                            motor
+                            has been automatically turned off. This smart and versatile system ensures efficient water
+                            management, offering both automated and manual control options to suit the farmer's
+                            preferences
+                            and needs.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="development" class="flex justify-center relative">
+                <div class="">
+                    <div class="hidden lg:block bg-[#44ad36] h-full w-[8px] ml-[9rem] absolute "></div>
+                    <div class="mt-[4rem] text-center">
+                        <div class="bg-black  hidden lg:block absolute h-[30px] w-[30px]  ml-[8.3rem] rounded-full">
+                            <div class="bg-white m-[6.5px] h-[17px] w-[17px] rounded-full"></div>
+                        </div>
+                        <h3 class="uppercase md:text-[2rem] font-Montserrat text-[20px] sm:text-[28px]">PHASES OF
+                            DEVELOPMENT</h3>
+                        <div class="border-b-4 mt-[0.3rem] border-[#44ad36] w-[15rem] mx-auto"></div>
+                        <p class="mt-[2rem]  mx-[2rem] lg:mx-[21.2%] text-[15px]  md:leading-[25px] text-justify"><span
+                                class="font-bold">Version 1.0:</span> I started with Version 1 of this model using an
+                            Arduino Nano, relay and an old
+                            phone. Where the model uses a simple technique where the user can operate the pump with just
+                            a missed call. Where the first call will start the motor and the second one will turn it
+                            off.
+                            Where
+                            the data about the current moisture of the soil is not taken into consideration and it is
+                            solely
+                            at
+                            the discretion of the farmer when to turn on and off the pump</p>
+
+                        <p
+                            class=" mt-[1rem] md:mt-[2rem]  mx-[2rem] lg:mx-[21.2%] text-[15px]  md:leading-[25px] text-justify">
+                            <span class="font-bold">Version 1.1:</span>
+                            In Version 1.1, I upgraded by adding a 2G GSM module connected to a NodeMCU
+                            for Wi-Fi connectivity and coded it accordingly. Here only the old phone is replaced by and
+                            2G
+                            SIM card module to reduce the size of the kit
+
+                        <p
+                            class=" mt-[1rem] md:mt-[2rem]  mx-[2rem] lg:mx-[21.2%] text-[15px]  md:leading-[25px] text-justify">
+                            <span class="font-bold">Version 1.2:</span>
+                            In this version a major upgradation has taken place where I have added a soil
+                            moisture sensor. Now the model can sense the moisture level of the soil and remind the
+                            farmer
+                            when the level of moisture goes below the given threshold level. Moreover, now the farmers
+                            receive SMS instead of phone call operations. The pumps can now be controlled using SMS.
+                        </p>
+
+                        <p
+                            class=" mt-[0.2rem] md:mt-[0.5rem]  mx-[2rem] lg:mx-[21.2%] text-[15px]  md:leading-[25px] text-justify">
+                            &#160 &#160 &#160 &#160 &#160 &#160 This version had one major advantage where the farmer
+                            could
+                            change the register
+                            phone number, required threshold, and set a timer to the pump to operate, by connecting a
+                            specific web server using the IP address of the NodeMCU.</p>
+
+                        <p
+                            class=" mt-[1rem] md:mt-[2rem]  mx-[2rem] lg:mx-[21.2%] text-[15px]  md:leading-[25px] text-justify">
+                            <span class="font-bold">Version 2.0 (Current Version): </span>
+                            Now, in this Version 2.0, I've taken it a step further by using
+                            a 4G LTE GSM module connected to an Arduino Nano along with a soil sensor. For Wi-Fi
+                            functionality, I've integrated a NodeMCU. I also connected the relay and coded both the
+                            NodeMCU and Arduino Nano, while also developing a dedicated app where the pumps can be
+                            operated through it while being connected to the Access Point (AP) of the NodeMCU. A major
+                            setback is faced during the development of this version as the app and its user interface to
+                            change phone number, required threshold, and set a timer to the pump to operate, could not
+                            be
+                            made operational. It can still be set into the programme code.
+                        </p>
+
+                        <p
+                            class=" mt-[1rem] md:mt-[2rem]  mx-[2rem] lg:mx-[21.2%] text-[15px]  md:leading-[25px] text-justify">
+                            <span class="font-bold">Version 2.1 (Future Versions): </span>
+                            In future model I am thinking of adding a Bluetooth module
+                            by which we can change phone number, required threshold, and set a timer to the pump to
+                            operate while being in the Bluetooth range
+                        </p>
+                        <p
+                            class=" mt-[0.2rem] md:mt-[0.5rem]  mx-[2rem] lg:mx-[21.2%] text-[15px]  md:leading-[25px] text-justify">
+                            &#160 &#160 &#160 &#160 &#160 &#160 I am also planning to develop an integrated application
+                            through which the user can
+                            monitor the current moisture level, operate the pumps, get notifications through the
+                            application
+                            alongside the current SMS facility when the moisture level goes below the set threshold. The
+                            app can also be used to set the registered phone number, threshold according to their need
+                            and
+                            timer for the pumps. This application can be used over the internet from anywhere in the
+                            world.
+                        </p>
+                        <p class="uppercase  mt-[1.5rem] md:mt-[3rem] underline font-bold text-[1.5rem]">connection
+                            diagram
+                            is given below <span class="lowercase">(Version 2.0)</span></p>
+                        <div class="m-auto w-[50%] border-2 border-black mt-[3rem] shadow-md shadow-black">
+                            <img class="m-auto w-[100%]" src="assets/images/diagram.png" height="700" width="700"
+                                alt="">
+                        </div>
+                        <p class="uppercase  mt-[1.5rem] md:mt-[3rem] underline font-bold text-[1.5rem]">code for <span
+                                class="lowercase">Version 2.0 👉 <a class="font-normal text-[#30833ae1]" href="">source
+                                    code</a></span></p>
+                        <section class="flex relative">
+                            <div class="">
+                                <div class="mt-[4rem] text-center">
+                                    <div
+                                        class="bg-black  hidden lg:block absolute h-[30px] w-[30px]  ml-[8.3rem] rounded-full">
+                                        <div class="bg-white m-[6.5px] h-[17px] w-[17px] rounded-full"></div>
+                                    </div>
+                                    <h3 class="uppercase md:text-[2rem] font-Montserrat text-[25px] sm:text-[28px]">
+                                        MATERIALS REQUIRED:</h3>
+                                    <div class="border-b-4 mt-[0.3rem] border-[#44ad36] w-[9rem] mx-auto"></div>
+                                    <p
+                                        class="mt-[2rem]  mx-[4rem] lg:mx-[21.2%]  md:leading-[25px] text-justify font-semibold text-[19px]">
+                                        The components used in this model includes.</p>
+                                    <div class=" mt-5">
+                                        <ol class="list-decimal md:mt-[1rem] list-inside mx-[30%] space-y-2">
+                                            <li class="text-left">4G LTE module (SIM7672S),</li>
+                                            <li class="text-left">Two Micro Controller Units (MCU)</li>
+                                            <p class="text-left"> &#160 &#160 &#160a. Arduino</p>
+                                            <p class="text-left"> &#160 &#160 &#160b. Noemcu ESP8266</p>
+                                            <li class="text-left mt-[10px]">5-volt relay</li>
+                                            <li class="text-left">Push switch</li>
+                                            <li class="text-left">Soil moisture sensor</li>
+                                            <li class="text-left">Set of wires.</li>
+                                        </ol>
+                                    </div>
+                                    <div id="scientific" class=" mt-[2rem] h-[70vh] relative">
+                                        <div class="hidden lg:block bg-[#44ad36] h-[4rem] w-[8px] ml-[9rem] absolute ">
+                                        </div>
+                                        <div class="pt-[4rem]">
+                                            <div
+                                                class="bg-white  hidden lg:block absolute h-[30px] w-[30px]  ml-[8.3rem] rounded-full">
+                                                <div class="bg-black m-[6.5px] h-[17px] w-[17px] rounded-full"></div>
+                                            </div>
+                                            <h3
+                                                class="uppercase underline underline-offset-8 md:text-[1.5rem] font-Montserrat text-[25px]  sm:text-[28px]">
+                                                SCIENTIFIC PRINCIPLE OF INVOLVED:</h3>
+                                            <p
+                                                class=" mt-[1rem] md:mt-[2rem]  mx-[2rem] lg:mx-[21.2%]  md:leading-[25px] text-justify">
+                                                The scientific principle underpinning this project involves the
+                                                correlation
+                                                between soil moisture
+                                                and electrical conductivity. The soil moisture sensor incorporated into
+                                                the
+                                                system operates
+                                                based on the principle that as soil moisture increases, the electrical
+                                                conductivity of the soil also
+                                                rises. This sensor measures the changes in conductivity, allowing the
+                                                system
+                                                to
+                                                accurately
+                                                detect when the soil requires watering. This scientific principle aligns
+                                                seamlessly with the
+                                                project's objective of using advanced technology, such as 4G networks,
+                                                to
+                                                streamline irrigation
+                                                processes for farmers with distant fields. The sensor's ability to
+                                                assess
+                                                soil
+                                                moisture levels
+                                                serves as a key component in the intelligent irrigation system,
+                                                enhancing
+                                                efficiency and
+                                                ensuring timely watering for optimal crop growth</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+            <section class="flex justify-center relative">
+                <div class="">
+                    <div class="mt-[4rem] text-center">
+                        <h3 class="uppercase md:text-[2rem] font-Montserrat text-[25px] sm:text-[28px]">
+                            ADVANTAGES</h3>
+                        <div class="border-b-4 mt-[0.3rem] border-[#44ad36] w-[9rem] mx-auto"></div>
+                        <p
+                            class="mt-[2rem]  mx-[2rem] lg:mx-[15.2%]  md:leading-[25px] text-justify font-semibold text-[19px]">
+                            DISTINCTIVE ADVANTAGES ASSOCIATED WITH THIS MODEL.</p>
+                        <div class=" mt-5">
+                            <ol class="list-decimal md:mt-[1rem] list-inside mx-[10%] space-y-2">
+                                <li class="text-left">The moisture level of the soil is constantly monitored resulting
+                                    in good health of the
+                                    plants</li>
+                                <li class="text-left">Farming is made easy for the farmer as the farmer does not has to
+                                    be physically present
+                                    in the farm to water the fields.</li>
+                                <li class="text-left">It reduces the wastage of water resulting from excess watering.
+                                </li>
+                            </ol>
+                        </div>
+                        <h3 class="uppercase md:text-[2rem] font-Montserrat text-[25px] mt-7 sm:text-[28px]">
+                            DISADVANTAGES</h3>
+                        <div class="border-b-4 mt-[0.3rem] border-[#44ad36] w-[9rem] mx-auto"></div>
+                        <p
+                            class="mt-[2rem]  mx-[2rem] lg:mx-[15.2%]  md:leading-[25px] text-justify font-semibold text-[19px]">
+                            POTENTIAL DRAWBACKS OF THIS MODEL IN PRACTICE</p>
+                        <div class=" mt-5">
+                            <ol class="list-decimal md:mt-[1rem] list-inside mx-[20%] space-y-2">
+                                <li class="text-left">The module needs to have a constant power supply.</li>
+                                <li class="text-left">Initial installation cost is to be incurred which is also kept
+                                    minimal.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+
+    <section id="contact" class="bg-black mt-5">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class=" text-4xl tracking-tight  text-center text-white font-Montserrat mt-[2rem]">Contact Us</h2>
+            <div class="border-b-4 mb-4 border-[#44ad36] w-[9rem] mx-auto"></div>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-200 sm:text-xl">This project is developed by
+                Anubhav Shivam Nath. If you have any questions or need information about this project, feel free to
+                reach out to me. </p>
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-100 ">Your email</label>
+                    <input type="email" id="email"
+                        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                        placeholder="example@gmail.com" required>
+                </div>
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-100 ">Subject</label>
+                    <input type="text" id="subject"
+                        class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500  "
+                        placeholder="Let us know how we can help you" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-100 ">Your message</label>
+                    <textarea id="message" rows="6"
+                        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 "
+                        placeholder="Leave a comment..."></textarea>
+                </div>
+                <button type="submit"
+                    class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-[#44ad36] sm:w-fit hover:bg-[#33702a] focus:ring-4 focus:outline-none focus:ring-primary-300 ">Send
+                    message</button>
+            </form>
+        </div>
+    </section>
+    </main>
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <img class="w-[50px] h-[50px] text-white border border-black bg-black rounded-lg"
+                    src="assets/images/logo.jpg" alt="">
+                <span class="ml-3 text-xl"> SIMDS-Hyrdo</span>
+            </a>
+            <p
+                class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4 text-center md:text-left">
+                © 2023-24 — Smart Irrigation and Moisture Detection System &#160 &#160 &#160 <span
+                    class="text-black">Developer-</span>
+                <a href="https://github.com/AnubhavSC" class="text-gray-600 ml-1" rel="noopener noreferrer"
+                    target="_blank"> Anubhav Shivam Nath</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a href="https://github.com/AnubhavSC" class="text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('scroll', () => {
+            var scroll_position = window.scrollY;
+            if (scroll_position > 250) {
+                header.style.backgroundColor = '#29323c';
+            } else {
+                header.style.backgroundColor = 'transparent';
+            }
+        });
+
+        menu_item.forEach((item) => {
+            item.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                mobile_menu.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
