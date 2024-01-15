@@ -598,6 +598,10 @@ video {
   border-width: 0;
 }
 
+.fixed{
+  position: fixed;
+}
+
 .absolute{
   position: absolute;
 }
@@ -743,6 +747,10 @@ video {
 
 .mt-\[4rem\]{
   margin-top: 4rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
 }
 
 .block{
@@ -1368,6 +1376,10 @@ video {
 
   .md\:mt-\[3rem\]{
     margin-top: 3rem;
+  }
+
+  .md\:mb-0{
+    margin-bottom: 0px;
   }
 
   .md\:block{
